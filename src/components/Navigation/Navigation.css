@@ -1,0 +1,28 @@
+.navi {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 6px 18px;
+  height: 50px;
+  width: 100%;
+  background: rgb(67, 232, 149, 0.7);
+}
+
+.navi > h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+}
+
+.navi img {
+  height: 32px;
+  margin-left: 6px;
+}
+
+.navi img:hover {
+  cursor: pointer;
+}

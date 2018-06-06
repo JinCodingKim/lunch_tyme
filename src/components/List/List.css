@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  background: rgb(42, 42, 42);
+}
+
+.detail-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.location-container {
+  width: 0;
+}
+
+.detail-container.found,
+.location-container.found {
+  transition: 500ms ease-in-out;
+}
+
+.detail-container.found {
+  width: 680px;
+}
+
+.location-container.found {
+  box-sizing: border-box;
+  padding-top: 50px;
+  width: 100%;
+}
