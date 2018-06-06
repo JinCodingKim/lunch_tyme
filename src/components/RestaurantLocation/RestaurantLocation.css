@@ -1,3 +1,12 @@
+#map-container,
+#map {
+  height: 300px;
+}
+
+#map {
+  z-index: 1;
+}
+
 .restaurant-header {
   height: 100px;
   background: rgb(52, 179, 121);
@@ -33,4 +42,28 @@
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 26px 0;
+}
+
+@media (max-width: 768px) {
+  .location {
+    background: rgb(255, 255, 255);
+  }
+  .restaurant-header {
+    height: 60px;
+  }
+  .restaurant-header > h2 {
+    font-size: 16px;
+  }
+  .restaurant-header > h4 {
+    font-size: 12px;
+  }
+  .restaurant-body p {
+    color: rgb(42, 42, 42);
+    font-size: 16px;
+  }
+
+  #map-container,
+  #map {
+    height: 180px;
+  }
 }

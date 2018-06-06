@@ -6,6 +6,6 @@ import List from "./components/List/List";
 export default (
   <Switch>
     <Route exact path="/" component={Internets} />
-    <Route path="/list" component={List} />
+    <Route exact path="/list" component={List} />
   </Switch>
 );

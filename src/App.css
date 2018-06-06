@@ -2,3 +2,10 @@
   display: grid;
   grid-template-columns: 150px auto;
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

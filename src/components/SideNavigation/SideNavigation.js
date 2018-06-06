@@ -16,7 +16,7 @@ const SideNavigation = ({ location }) => {
       >
         <Link to="/" className="side-link">
           <img src={internetsIcon} alt="internets" />
-          INTERNETS
+          internets
         </Link>
       </div>
       <div
@@ -28,7 +28,7 @@ const SideNavigation = ({ location }) => {
       >
         <Link to="/list" className="side-link">
           <img src={lunchIcon} alt="lunch" />
-          LUNCH
+          lunch
         </Link>
       </div>
     </nav>

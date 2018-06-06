@@ -1,23 +1,15 @@
 import React from "react";
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker
-} from "react-google-maps";
-import foodIcon from "../../img/local_pizza.png";
+import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 import MarkerContainer from "../MarkerContainer/MarkerContainer";
 
 const DisplayMap = ({ isMarkerShown, center, markers, nomsLocations }) => (
   <GoogleMap zoom={15} center={{ ...center }}>
     {isMarkerShown &&
       markers.map((marker, i) => {
-        return marker.position.lat === center.lat &&
-          marker.position.lng === center.lng ? (
-          <Marker key={i} icon={foodIcon} position={{ ...marker.position }} />
-        ) : (
+        return (
           <MarkerContainer
             key={i}
+            center={center}
             position={marker.position}
             name={marker.name}
           />

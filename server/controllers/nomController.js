@@ -17,7 +17,8 @@ module.exports = {
   },
   getRestaurantInfo: (req, res) => {
     const { name } = req.params;
-    let index = nomsArr.findIndex(location => location.name === name);
+    let cleanName = name.split("%20").join(" ");
+    let index = nomsArr.findIndex(location => location.name === cleanName);
     let filteredNoms = nomsArr.filter((e, i) => i === index);
     res.status(200).json(filteredNoms);
   }

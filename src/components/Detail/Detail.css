@@ -36,3 +36,17 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+@media (max-width: 768px) {
+  .card {
+    height: 180px;
+  }
+
+  .card-content > h2 {
+    font-size: 16px;
+  }
+
+  .card-content > h4 {
+    font-size: 12px;
+  }
+}

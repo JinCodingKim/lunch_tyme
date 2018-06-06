@@ -25,9 +25,34 @@
   height: 100%;
   width: 100%;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .side-link > img {
   height: 24px;
   margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .side-nav {
+    flex-direction: row;
+    height: 50px;
+    width: 100vw;
+    padding: 0;
+    position: fixed;
+    bottom: calc(100vh-50px);
+  }
+
+  .side-container {
+    height: 50px;
+  }
+
+  .side-link {
+    font-size: 10px;
+    text-transform: lowercase;
+  }
+
+  .side-link > img {
+    margin: 0;
+  }
 }
