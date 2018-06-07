@@ -37,7 +37,7 @@
   margin-left: 6px;
 }
 
-#map {
+#map-icon {
   display: none;
 }
 
@@ -73,7 +73,7 @@
     display: none;
   }
 
-  #map {
+  #map-icon {
     display: inline-block;
     position: absolute;
     right: 12px;

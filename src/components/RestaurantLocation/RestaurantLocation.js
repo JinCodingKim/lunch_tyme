@@ -33,7 +33,6 @@ class RestaurantLocation extends Component {
     const { nomsLocations } = this.props;
     const { name, category, location, contact } = this.props.nomDetail;
     const twitterAvail = contact && contact.twitter;
-
     return (
       lat !== 0 &&
       lng !== 0 && (
@@ -47,7 +46,8 @@ class RestaurantLocation extends Component {
             containerElement={<div id="map-container" />}
             mapElement={<div id="map" />}
             center={{ lat, lng }}
-            markers={nomsLocations}
+            name={name}
+            nomsLocations={nomsLocations}
           />
           <div className="restaurant-header">
             <h2>{name}</h2>

@@ -19,13 +19,10 @@ class MarkerContainer extends Component {
   render() {
     const { label } = this.state;
     const { center, name, position, getLocation } = this.props;
+    const matching = position.lat === center.lat && position.lng === center.lng;
     return (
       <Marker
-        icon={
-          position.lat === center.lat && position.lng === center.lng
-            ? foodIcon
-            : spotIcon
-        }
+        icon={matching ? foodIcon : spotIcon}
         label={`${label}`}
         onDblClick={() => getLocation(name)}
         onMouseDown={() => this.handleLabel(name)}
