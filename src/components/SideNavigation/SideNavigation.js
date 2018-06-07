@@ -6,6 +6,7 @@ import "./SideNavigation.css";
 
 const SideNavigation = ({ location }) => {
   const { pathname } = location;
+
   return (
     <nav className="side-nav">
       <div
@@ -34,4 +35,5 @@ const SideNavigation = ({ location }) => {
     </nav>
   );
 };
+
 export default withRouter(SideNavigation);

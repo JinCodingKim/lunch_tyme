@@ -37,6 +37,10 @@
   margin-left: 6px;
 }
 
+#map {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navi {
     position: fixed;
@@ -67,5 +71,12 @@
 
   .img-placeholder {
     display: none;
+  }
+
+  #map {
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    height: 20px;
   }
 }

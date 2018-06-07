@@ -7,6 +7,7 @@ const Detail = ({ restaurant, selectedName, displayLocation }) => {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
   };
+
   return (
     <div
       className="card"
@@ -38,4 +39,5 @@ const Detail = ({ restaurant, selectedName, displayLocation }) => {
     </div>
   );
 };
+
 export default Detail;

@@ -19,11 +19,11 @@ class List extends Component {
     const selectedName = nomDetail && nomDetail.name;
     const detailClass = ["detail-container"];
     const locationClass = ["location-container"];
-    console.log(this.props);
     if (show) {
       detailClass.push("found");
       locationClass.push("found");
     }
+
     let nomsListed = nomList.map((restaurant, i) => (
       <Detail
         key={i}
@@ -32,6 +32,7 @@ class List extends Component {
         displayLocation={this.displayLocation}
       />
     ));
+
     let nomsLocations = nomList.map(restaurant => {
       return {
         name: restaurant.name,
@@ -41,9 +42,12 @@ class List extends Component {
         }
       };
     });
+
     return (
       <div className="list">
-        <section className={detailClass.join(" ")}>{nomsListed}</section>
+        <section className={detailClass.join(" ")}>
+          <div className="hide-scroll">{nomsListed}</div>
+        </section>
         <section className={locationClass.join(" ")}>
           {show && (
             <RestaurantLocation

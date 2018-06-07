@@ -3,6 +3,7 @@ import axios from "axios";
 const GET_RESTAURANTS = "GET_RESTAURANTS";
 const GET_LOCATION = "GET_LOCATION";
 const SWITCHER = "SWITCHER";
+const CURRENT_LOCATION = "CURRENT_LOCATION";
 
 const initialState = {
   nomList: [],
@@ -31,6 +32,13 @@ export function switcher(val) {
   return {
     type: SWITCHER,
     payload: val.target.name
+  };
+}
+
+export function currentLocation(location) {
+  return {
+    type: CURRENT_LOCATION,
+    payload: { name: "Current Location", location }
   };
 }
 
@@ -77,6 +85,12 @@ export default function restaurant(state = initialState, action) {
           nomHolder: {}
         };
       }
+    case CURRENT_LOCATION:
+      return {
+        ...state,
+        show: true,
+        nomDetail: action.payload
+      };
     default:
       return state;
   }

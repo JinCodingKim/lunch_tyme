@@ -1,8 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
+import "./Internets.css";
 
-class Internets extends Component {
-  render() {
-    return <div className="">Internets</div>;
-  }
-}
+const Internets = () => (
+  <div className="internets">
+    <div>
+      <h1>Lunch Tyme</h1>
+    </div>
+  </div>
+);
 export default Internets;

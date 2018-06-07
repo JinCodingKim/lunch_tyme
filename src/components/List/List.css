@@ -2,6 +2,7 @@
   display: flex;
   background: rgb(42, 42, 42);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .detail-container,
@@ -12,7 +13,16 @@
 .detail-container {
   width: 100%;
   height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hide-scroll {
+  width: 105%;
+  height: 100%;
   overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
 }
 
 .location-container {

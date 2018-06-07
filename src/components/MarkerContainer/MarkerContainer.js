@@ -35,6 +35,7 @@ class MarkerContainer extends Component {
     );
   }
 }
+
 export default connect(
   null,
   { getLocation }

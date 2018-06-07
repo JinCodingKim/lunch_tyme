@@ -33,6 +33,7 @@ class RestaurantLocation extends Component {
     const { nomsLocations } = this.props;
     const { name, category, location, contact } = this.props.nomDetail;
     const twitterAvail = contact && contact.twitter;
+
     return (
       lat !== 0 &&
       lng !== 0 && (
@@ -66,4 +67,5 @@ class RestaurantLocation extends Component {
     );
   }
 }
+
 export default RestaurantLocation;
